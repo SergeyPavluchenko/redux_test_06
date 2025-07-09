@@ -1,16 +1,20 @@
+import { GlobalStyled } from './GlobalStyled';
+import { Layout } from './Layout/Layout';
+
+import { PhoneForm } from './PhoneForm/PhoneForm';
+import { Contacts } from './Contacts/Contacts';
+import { PageStyle } from './PageStyle';
+
+import React from 'react';
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template!
-    </div>
+    <Layout>
+      <PageStyle>
+        <PhoneForm />
+        <Contacts />
+      </PageStyle>
+      <GlobalStyled />
+    </Layout>
   );
 };
