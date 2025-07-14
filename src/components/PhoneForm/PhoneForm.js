@@ -3,7 +3,7 @@ import { nanoid } from 'nanoid';
 import * as Yup from 'yup';
 import { ButtonContact, Form } from './PhoneFormStyled';
 import { useDispatch, useSelector } from 'react-redux';
-import { addPhoneNumber } from '../../redux/ContactSlice/contactSlice';
+import { addPhoneNumber } from '../../redux/contactSlice/contactSlice';
 import { Notify } from 'notiflix';
 
 const PhoneSchema = Yup.object().shape({

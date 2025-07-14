@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { Filter } from 'components/filter/Filter';
-import { removeContact } from '../../redux/ContactSlice/contactSlice';
+import { removeContact } from '../../redux/contactSlice/contactSlice';
 import {
   LiStyle,
   UlStyle,
